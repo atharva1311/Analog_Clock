@@ -1,17 +1,15 @@
 setInterval(() => {
-  d = new Date();
-  htime = d.getHours();
-  mtime = d.getMinutes();
-  stime = d.getSeconds();
+  date = new Date();
+  hourtime = date.getHours();
+  minutetime = date.getMinutes();
+  secondtime = date.getSeconds();
 
-  hrotation = 30 * htime + mtime / 2;
-  mrotation = 6 * mtime;
-  srotation = 6 * stime;
+  hourrotation = 30 * hourtime + minutetime / 2;
+  minuterotation = 6 * minutetime;
+  secondrotation = 6 * secondtime;
 
-  hour.style.transform = `rotate(${hrotation}deg)`;
-  minute.style.transform = `rotate(${mrotation}deg)`;
+  hour.style.transform = `rotate(${hourrotation}deg)`;
+  minute.style.transform = `rotate(${minuterotation}deg)`;
 
-  second.style.transform = `rotate(${srotation}deg)`;
-
-  // Atharva jadhav
+  second.style.transform = `rotate(${secondrotation}deg)`;
 }, 1000);
